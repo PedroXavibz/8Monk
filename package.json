@@ -1,0 +1,42 @@
+{
+  "name": "zapperson_bot",
+  "version": "1.0.0",
+  "description": "Whatsapp bot",
+  "main": "src/app.ts",
+  "author": "Pedro Xavier",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=production node dist/app.js",
+    "dev": "NODE_ENV=development nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/app.ts",
+    "build": "tsc",
+    "clean": "rm -r ./dist"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.3",
+    "@types/node-fetch": "^2.6.6",
+    "@types/qrcode-terminal": "^0.12.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.7.4",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "@tobyg74/tiktok-api-dl": "^1.0.7",
+    "axios": "^1.5.1",
+    "cheerio": "^1.0.0-rc.12",
+    "get-twitter-media": "^2.0.7",
+    "qrcode-terminal": "^0.12.0",
+    "querystring": "^0.2.1",
+    "whatsapp-web.js": "https://github.com/Julzk/whatsapp-web.js/tarball/jkr_hotfix_7"
+  }
+}
